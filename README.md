@@ -5,7 +5,7 @@
 3. Есть [zip-архив](/jokes.zip) с корпусом шуток.
 4. Надо скачать корпус для предобучения [w2v](http://vectors.nlpl.eu/repository/20/65.zip) и [navec](https://storage.yandexcloud.net/natasha-navec/packs/navec_hudlit_v1_12B_500K_300d_100q.tar) (см. комментарии и wget).
 5. Есть файл [`requirements.txt`](/requirements.txt) со всеми требуемыми для установки библиотеками.
-6. Есть папки [`static`](/static/) и [`templates`](/tamplates/) с картинками и страницами соответственно.
+6. Есть папки [`static`](/static/) и [`templates`](/templates/) с картинками и страницами соответственно.
 ## Как пользоваться через CLI?
 ```
 > main.py your_query your_indexer --top=n
