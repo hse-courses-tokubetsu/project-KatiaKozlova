@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row" style="margin: 50px 10%">
+	<div class="column" style="margin: 50px 10%">
+		<img src="static/results.png" alt="" align="middle" style='height:100px;'>
+	</div>
+        
+	<div class="column" style="margin: 50px 10%">
+		<p><b>
+			top-{{n}} results for the query <i>{{query}}</i><br>
+			spent time: {{timing}}s
+		</b></p>
+	</div>
+</div>
+
+{% for output in outputs %}
+<div style="margin: 50px 10%; background-color: #92CCFF">
+	<p><b>{{output}}</b></p>
+</div>
+{% endfor %}
+
+{% endblock %}

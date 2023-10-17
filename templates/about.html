@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="margin: 50px 10%; text-align: center">
+	<img src="static/joke.png" alt="" align="middle" style='height:100px;'>
+    <h3><u>joogle</u> is a searcher of russian-language bad jokes.</h3>
+</div>
+
+<div style="margin: 50px 10%; text-align: center">
+	<img src="static/loupe.png" alt="" align="middle" style='height:100px;'>
+    <h4>how it works?</h4>
+	<p>u write down your serching query in russian,</p>
+	<p>u choose one of the rankers (bm-25, word2vec or navec),</p>
+	<p>u can change the output number of jokes (default number is 10),</p>
+	<p>u push the serching button (with a magnifying glass),</p>
+	<p>u get your top-n results and a time spent on the query.</p>
+</div>
+   
+<div class="row" style="margin: 50px 10%">
+	<div class="column" style="width: 50%;">
+		<h4>who did this?</h4>
+        <img src="static/katya.png" alt="katya" align="middle" style='height:100px;'>
+		<h6>kate kozlova, 4th year undergrad</h6>
+		<p>creator and developper</p>
+	</div>
+	<div class="column" style="width: 25%;">
+		<p>
+			<b>contacts:</b><br>
+			<a href="https://t.me/da_budet_tak">telegram</a><br>
+			<a href="https://vk.com/smth.happens">vk</a><br>
+			<a href="mailto:katia.kozlova1@gmail.com">e-mail</a><br>
+		</p>
+	</div>    
+	<div class="column" style="width: 25%;">
+		<p>
+			<b>links:</b><br>
+			<a href="https://drive.google.com/drive/folders/1pcYK6y9qCFIejxxT4QeKp0p6P_rwtQmq?usp=sharing">google disk</a><br>
+			<a href="https://github.com/hse-courses-tokubetsu/project-KatiaKozlova">github</a><br>
+		</p>
+	</div>
+</div>
+
+{% endblock %}

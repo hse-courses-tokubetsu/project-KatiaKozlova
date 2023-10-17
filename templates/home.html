@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+
+<div style="margin: 50px 10%">
+<img src="static/search.png" alt="" align="middle" style='width:200px;'>
+    </div>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form action="/process" method = 'GET'>
+	<input type="text" placeholder="Искать..." name="search">
+	<button type="submit"><i class="fa fa-search"></i></button>
+    
+    <div>
+		<label for="n_top">how many jokes?</label><br>
+		<input
+			style="width: 50px"
+			type="number"
+			id="n_top"
+			name="n_top"
+			min="1"
+			value="10"/>
+	</div>
+	<div>
+		<label for="model_type">choose a model:</label><br>
+		<select name="models" id="model_type">
+			<option value="">choose one model, pls</option>
+			<option value="bm25">bm-25</option>
+			<option value="w2v">word2vec</option>
+			<option value="nvc">navec</option>
+		</select>
+    </div>
+    
+</form>
+
+{% endblock %}
