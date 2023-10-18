@@ -19,10 +19,16 @@
 1. Открыть [тетрадку](/project.ipynb) в Google Colab.
 2. Создать на своем Google Drive ярлык с папкой [`projects`](https://drive.google.com/drive/folders/1pcYK6y9qCFIejxxT4QeKp0p6P_rwtQmq?usp=drive_link).
 3. Подключить (замаунтить) свой Google Drive к Google Colab'у и скопировать папку `projects` в `content` (первая ячейка тетрадки).
-4. Установить все требуемые бибилиотеки из файла [`requirements.txt`](/requirements.txt):
-```python
-!pip install -r requirements.txt
-```
-5. Последовательно запустить все ячейки.
-6. Перейти по ссылке, окачивающейся на `ngrok-free.app`, и нажать **Visit Site**.
-7. Описание работы сайта есть в разделе *what's this?* на верхней панели.
+4. Установить все требуемые бибилиотеки
+   1. Из файла [`requirements.txt`](/requirements.txt):
+    ```python
+    !pip install -r requirements.txt
+    ```
+   2. Раскомментить установки во второй ячейке.
+5. Залогиниться или зарегистрироваться в [ngrok](https://ngrok.com/) и получить свой код аутентификации. Запустить код из третьей ячейки, где вместо `your_authtoken` надо подставить аутентификационный токен:
+   ```python
+   !ngrok authtoken your_authtoken
+   ```
+7. Последовательно запустить все ячейки.
+8. Перейти по ссылке, окачивающейся на `ngrok-free.app`, и нажать **Visit Site**.
+9. Описание работы сайта есть в разделе *what's this?* на верхней панели.
