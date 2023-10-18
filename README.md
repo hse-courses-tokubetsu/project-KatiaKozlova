@@ -18,7 +18,7 @@
 ## Как запустить сайт?
 1. Открыть [тетрадку](/project.ipynb) в Google Colab.
 2. Создать на своем Google Drive ярлык с папкой [`projects`](https://drive.google.com/drive/folders/1pcYK6y9qCFIejxxT4QeKp0p6P_rwtQmq?usp=drive_link).
-3. Подключить (замаунтить) свой Google Drive к Google Colab'у.
+3. Подключить (замаунтить) свой Google Drive к Google Colab'у и скопировать папку `projects` в `content` (первая ячейка тетрадки).
 4. Установить все требуемые бибилиотеки из файла [`requirements.txt`](/requirements.txt):
 ```python
 !pip install -r requirements.txt
