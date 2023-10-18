@@ -7,11 +7,11 @@
 5. Есть файл [`requirements.txt`](/requirements.txt) со всеми требуемыми для установки библиотеками.
 6. Есть папки [`static`](/static/) и [`templates`](/templates/) с картинками и страницами соответственно.
 ## Как пользоваться через CLI?
-```
-> main.py your_query your_indexer --top=n
+```python
+> python main.py your_query your_indexer --top=n
 ```
 Где вместо:
-* `your_query` - поисковый запрос,
+* `your_query` - поисковый запрос с нижними подчеркиваниями вместо пробелов,
 * `your_indexer` - вид индексатора (word2vec, navec, bm25),
 * `n` - кол-во анекдотов в выдаче (опционально, дефолтно десять).
 
