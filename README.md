@@ -8,7 +8,7 @@
 6. Есть папки [`static`](/static/) и [`templates`](/templates/) с картинками и страницами соответственно.
 ## Как пользоваться через CLI?
 ```python
-> python main.py your_query your_indexer --top=n
+> main.py your_query your_indexer --top=n
 ```
 Где вместо:
 * `your_query` - поисковый запрос с нижними подчеркиваниями вместо пробелов,
