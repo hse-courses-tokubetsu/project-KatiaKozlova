@@ -22,12 +22,12 @@ def similarity(query: str, model_type: str, n: int=10) -> list[str]:
 
 def main():
     parser = argparse.ArgumentParser(description='Searcher of the Russian jokes!')
-    parser.add_argument('query', type=str, help='What do you remember about the joke?') 
+    parser.add_argument('query', type=str, help='What do you remember about the joke (put underscores instead of spaces)?') 
     parser.add_argument('model_type', type=str, help='What type of model would you like: BM-25 (bm25), Word2Vec (w2v) or Navec (nvc)?')
     parser.add_argument('--top', type=int, default=10, help='How many jokes would you like (default: 10)')
     args = parser.parse_args()
     
-    print('\n'.join(similarity(args.query, args.model_type, args.top)))
+    print('\n'.join(similarity(args.query, ' '.join(args.model_type.split('_')), args.top)))
 
 if __name__ == "__main__":
     main()
